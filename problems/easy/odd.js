@@ -3,8 +3,12 @@
 // eg. [1, 2, 3, 4, 5] -> [1, 3, 5]
 
 export const odd = (xs) => {
-	// Your code here...
-	return []
+	const list = [];
+	for (let num of xs) {
+	  num % 2 !== 0 ? list.push(num) : "";
+	}
+	return list;
+	
 }
 
 const tests = [
